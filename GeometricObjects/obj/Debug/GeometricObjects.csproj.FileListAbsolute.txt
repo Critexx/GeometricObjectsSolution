@@ -13,3 +13,6 @@ C:\Users\Pascal\Documents\Visual Studio 2013\Projects\GeometricObjectsSolution\G
 C:\Users\Pascal\Documents\Visual Studio 2013\Projects\GeometricObjectsSolution\GeometricObjects\obj\Debug\GeometricObjects.csprojResolveAssemblyReference.cache
 C:\Users\Pascal\Documents\Visual Studio 2013\Projects\GeometricObjectsSolution\GeometricObjects\bin\Debug\GeometricObjects.exe
 C:\Users\Pascal\Documents\Visual Studio 2013\Projects\GeometricObjectsSolution\GeometricObjects\bin\Debug\GeometricObjects.pdb
+C:\Users\pschaffner.LIME-TEC.000\Documents\Visual Studio 2012\Projects\GeometricObjectsSolution\GeometricObjects\bin\Debug\GeometricObjects.exe
+C:\Users\pschaffner.LIME-TEC.000\Documents\Visual Studio 2012\Projects\GeometricObjectsSolution\GeometricObjects\bin\Debug\GeometricObjects.pdb
+C:\Users\pschaffner.LIME-TEC.000\Documents\Visual Studio 2012\Projects\GeometricObjectsSolution\GeometricObjects\obj\Debug\GeometricObjects.csprojResolveAssemblyReference.cache

@@ -49,5 +49,18 @@ namespace GeometricObjects
             XCoordinate += dx;
             YCoordinate += dy;
         }
+
+        // overload Method
+        public void Move(double dx, double dy, int dRadius)
+        {
+            Move(dx, dy);
+            Radius += dRadius;
+        }
+
+        // gibt zurück ob kreis grösser ist als der parametisierte kreis.
+        public Boolean Bigger(Circle kreis)
+        {
+            return (Radius > kreis.Radius);
+        }
     }
 }

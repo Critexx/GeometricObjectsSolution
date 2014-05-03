@@ -25,12 +25,28 @@ namespace GeometricObjects
             else
                Console.WriteLine("Kreis 2 ist grösser als Kreis 1");
 
+            // parameter der methode DoSomething referenziert auf die Variable via "ref" und ist nicht lokal.
+            int value = 3;
+            DoSomethingWithRef(ref value);
+            // out macht dasselbe, mit dem unterschied, dass der übergebene parameter nicht initialisiert werden muss. Per Out muss die variable auf jeden fall geändert werden.
+            DoSomethingWithOut(out value);
+
             // Ausgabe:
             Console.WriteLine("Der Kreisradius beträgt {0}", kreis.Radius);
             Console.WriteLine("Die Fläche beträgt {0}", kreis.GetArea());
             Console.WriteLine("Der Umfang beträgt {0}", kreis.GetCircumference());
             Console.WriteLine("Der Kreis befindet sich auf X: {0} Y: {1}", kreis.XCoordinate, kreis.YCoordinate);
+            Console.WriteLine("{0}", value);
             Console.ReadKey();
         }
+        static void DoSomethingWithRef(ref int param)
+        {
+            param = 500;
+        }
+        static void DoSomethingWithOut(out int param)
+        {
+            param = 700;
+        }
+
     }
 }

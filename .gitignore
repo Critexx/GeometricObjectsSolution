@@ -1,0 +1,6 @@
+# bin und obj Ornder werden ignoriert
+bin/
+obj/
+
+# Binär Datei
+*.suo

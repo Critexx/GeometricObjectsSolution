@@ -31,6 +31,12 @@ namespace GeometricObjects
             // out macht dasselbe, mit dem unterschied, dass der übergebene parameter nicht initialisiert werden muss. Per Out muss die variable auf jeden fall geändert werden.
             DoSomethingWithOut(out value);
 
+            // Methode mit params
+            Console.WriteLine("Add Routine mit params: {0}", Add(5, 5, 4, 4, 3, 2, 3, 3, 4, 5, 5, 5, 5, 5, 5, 5, 3, 5, 5));
+
+            // Methode mit optionalem Parameter
+            OptionalParam("Pascal", 5);
+
             // Ausgabe:
             Console.WriteLine("Der Kreisradius beträgt {0}", kreis.Radius);
             Console.WriteLine("Die Fläche beträgt {0}", kreis.GetArea());
@@ -48,5 +54,21 @@ namespace GeometricObjects
             param = 700;
         }
 
+        static long Add(int value1, int value2, params int[] list)
+        {
+            long sum = value1 + value2;
+            foreach(int z in list)
+            {
+                sum += z;
+            }
+            return sum;
+        }
+        static void OptionalParam(string name, int value = -1)
+        {
+            if(value != -1)
+                Console.WriteLine("Ein Wert wurde übergeben");
+            else
+                Console.WriteLine("Parameter wurde nicht mitgegeben");
+        }
     }
 }

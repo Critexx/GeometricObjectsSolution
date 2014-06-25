@@ -20,18 +20,8 @@ namespace GeometricObjects
         public readonly int ZweiterTestInt = 1338;  // readonly Variabeln können im gegensatz zu Konstanten im Konstruktor gesetzt werden.
 
         public double YCoordinate { get; set; }   // das private Feld wird implizit bereitgestellt. Es macht genau das, was in XCoordinate definiert ist. Man kann es noch priviate machen
-        private double _XCoordinate; 
-        public double XCoordinate 
-        {
-            get
-            {
-                return _XCoordinate;
-            }
-           set
-            {
-               _XCoordinate = value;
-            }
-        }
+        public double XCoordinate { get; set; }
+
         private int _Radius;
         public int Radius
         {

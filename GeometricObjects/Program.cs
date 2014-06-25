@@ -54,7 +54,7 @@ namespace GeometricObjects
             param = 700;
         }
 
-        static long Add(int value1, int value2, params int[] list)
+        static long Add(int value1, int value2, params int[] list) // ein params-Parameter muss an letzter stelle stehen und darf nur einmal vorkommen
         {
             long sum = value1 + value2;
             foreach(int z in list)

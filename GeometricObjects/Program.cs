@@ -14,7 +14,7 @@ namespace GeometricObjects
             kreis.Radius = 12;
             kreis.XCoordinate = 100;
             kreis.YCoordinate = 100;
-            
+
             kreis.Move(20, 60);
 
             Circle kreis2 = new Circle();
@@ -43,14 +43,6 @@ namespace GeometricObjects
             Console.WriteLine("Der Umfang beträgt {0}", kreis.GetCircumference());
             Console.WriteLine("Der Kreis befindet sich auf X: {0} Y: {1}", kreis.XCoordinate, kreis.YCoordinate);
             Console.WriteLine("{0}", value);
-            
-
-            // GraphicCircle
-            GraphicCircle gCircle = new GraphicCircle();
-            gCircle.Draw();
-
-            Console.WriteLine("Anzahl der Kreise = {0}", GraphicCircle.CountCircles);
-                       
             Console.ReadKey();
         }
         static void DoSomethingWithRef(ref int param)

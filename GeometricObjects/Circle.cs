@@ -9,7 +9,7 @@ namespace GeometricObjects
     public class Circle
     {
         // -------- Klasseneigenschaften ----------
-        private static int _CountCircles;   // mit "static" erzeugt man eine Klasseneigenschaft (oder Klassen Methode). Sie wird mit dem Klassennamen aufgerufen.
+        protected static int _CountCircles;   // mit "static" erzeugt man eine Klasseneigenschaft (oder Klassen Methode). Sie wird mit dem Klassennamen aufgerufen.
         public static int CountCircles
         {
             get { return _CountCircles; }
@@ -22,7 +22,7 @@ namespace GeometricObjects
         public double YCoordinate { get; set; }   // das private Feld wird implizit bereitgestellt. Es macht genau das, was in XCoordinate definiert ist. Man kann es noch priviate machen
         public double XCoordinate { get; set; }
 
-        private int _Radius;
+        protected int _Radius;
         public int Radius
         {
             get
